@@ -40,15 +40,31 @@ function Count() {
         }
     };
     getContributors();
+
+    const setInitialDate = () => {
+        const today = new Date();
+        const dayOfWeek = today.getDay(); // 0 (Sunday) to 6 (Saturday)
+        if (dayOfWeek < 6) { // If it's not Saturday
+            const nextSunday = new Date(today);
+            nextSunday.setDate(today.getDate() + (7 - dayOfWeek)); // Get next Sunday
+            const formattedDate = `${nextSunday.toLocaleString('default', { month: 'long' })} ${nextSunday.getDate()}, ${nextSunday.getFullYear()}`;
+            setDate(formattedDate);
+        }
+    };
+    setInitialDate();
+
     
     // Update date every Saturday at 00:00:00
     const updateDate = () => {
+        // console.log('Updating date...');
         const today = new Date();
         const dayOfWeek = today.getDay(); // 0 (Sunday) to 6 (Saturday)
+        console.log("test", today , dayOfWeek)
         if (dayOfWeek === 6) { // Saturday
             const nextSunday = new Date(today);
             nextSunday.setDate(nextSunday.getDate() + 1); // Get next Sunday
             const formattedDate = `${nextSunday.toLocaleString('default', { month: 'long' })} ${nextSunday.getDate()}, ${nextSunday.getFullYear()}`;
+            // console.log('New date:', formattedDate);
             setDate(formattedDate);
         }
     };
@@ -61,7 +77,7 @@ function Count() {
     updateDate();
 
 
-    }, [])
+    }, [date])
     // console.log("hello")
     console.log("date",date)
 
