@@ -1,0 +1,38 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.saroops {
+    border-top: 3px solid $primary_color_light-blue;
+    padding: 1rem;
+
+    &__Guru-Nanak-Dev-Ji--saroop {
+        // border: 10px solid $secondary_color_yellow;
+        box-shadow: 0px 4px 50px rgba(154, 124, 5, 0.4);
+        border-radius: 2rem;
+    }
+
+    &__sant {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__Baba-Nand-Singh-Ji--saroop {
+        height: 20rem;
+    }
+
+    &__Baba-Isher-Singh-Ji--saroop {
+        height: 20rem;
+    }
+}
+
+.gurshabad {
+    color: $supporting_color_green;
+    font-weight: bold;
+    font-size: 3rem
+}
