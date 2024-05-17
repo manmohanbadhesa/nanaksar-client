@@ -21,7 +21,7 @@ function Header() {
                     </NavLink>
                 </div>
                 <div className="header__links">
-                    <NavLink className="header__link">
+                    <NavLink className="header__link" to={"/about"}>
                         <p className="header__icon">About</p>
                     </NavLink>
                     <NavLink className="header__link">

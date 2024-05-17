@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import FivePayment from './pages/FivePayment/FivePayment';
 import TenPayment from './pages/TenPayment/TenPayment';
+import AboutPage from './pages/About/AboutPage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="/about" element={<AboutPage/>} />
           <Route path="/paymentFive" element={<FivePayment/>} />
           <Route path="/paymentTen" element={<TenPayment/>} />
         </Routes>
