@@ -8,13 +8,15 @@
 }
 
 .saroops {
-    border-top: 3px solid $primary_color_light-blue;
+    // border-top: 3px solid $primary_color_light-blue;
     padding: 1rem;
+    background-color: #152544;
 
     &__Guru-Nanak-Dev-Ji--saroop {
         // border: 10px solid $secondary_color_yellow;
-        box-shadow: 0px 4px 50px rgba(154, 124, 5, 0.4);
-        border-radius: 2rem;
+        box-shadow: 0px 2px 10px rgba(154, 124, 5, 0.4);
+        border-radius: 1rem;
+        height: 15rem;
     }
 
     &__sant {
@@ -32,7 +34,7 @@
 }
 
 .gurshabad {
-    color: $supporting_color_green;
+    color: white;
     font-weight: bold;
-    font-size: 3rem
+    font-size: 1.5rem
 }

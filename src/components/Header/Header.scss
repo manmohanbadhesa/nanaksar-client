@@ -52,11 +52,11 @@
     &__logo {
         height: 3rem;
         border-radius: 2rem;
-        transition: 0.5s ease;
+        transition: 0.25s ease;
 
         &:hover {
             height: 3.5rem;
-            border-bottom: 3px solid $primary_color_light-blue;
+            // border-bottom: 3px solid $primary_color_light-blue;
         }
 
         @include tablet {
@@ -64,7 +64,7 @@
 
             &:hover {
                 height: 5rem;
-                border-bottom: 3px solid $primary_color_light-blue;
+                // border-bottom: 3px solid $primary_color_light-blue;
             }
         }
     }
@@ -103,11 +103,9 @@
     &__icon {
         font-size: 0.75rem;
         color: $primary_color_light-blue;
-        height: 2.5rem;
-        width: 2.5rem;
-        border: 2px solid $primary_color_light-blue;
-        outline: 2px solid $primary_color;
-        border-radius: 50%;
+        border-bottom: 2px solid $primary_color_light-blue;
+        // outline: 2px solid $primary_color;
+        // border-radius: 50%;
         line-height: 2rem;
         transition: box-shadow 0.5s ease;
         transition: background-color 0.5s ease;
@@ -127,7 +125,7 @@
 
         @include tablet {
             width: 100%;
-            border-radius: 1rem;
+            // border-radius: 1rem;
             line-height: 2rem;
             font-size: 1rem;
 
@@ -147,7 +145,8 @@
         display: none;
 
         @include tablet {
-            display: flex;
+            display: none;
+
             width: 30%;
         }
         

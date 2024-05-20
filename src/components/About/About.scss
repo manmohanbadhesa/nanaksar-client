@@ -45,11 +45,45 @@
         max-width: 100%;
         padding: 1rem 2rem;
 
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 2rem 4rem;
+        }
+
 
         &-img {
             max-width: 80%;
-            border-radius: 6rem;
+            height: 20rem;
+            border-radius: 1.5rem;
+
+            @include tablet {
+                max-width: 30%;
+            }
         }
+    }
+
+    &__seva {
+        color: #152544;
+        background-color: white;
+        width: 80%;
+        border-radius: 1.5rem;
+
+        @include tablet {
+            width: 65%;
+        }
+    }
+
+    &__seva-bhangti--bani {
+        font-weight: bold;
+        font-size: 1.25rem;
+
+    }
+
+    &__seva-bhangti--transliteration {
+        font-weight: 500;
+        font-size: 1rem;
+
     }
 
 }
